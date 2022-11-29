@@ -9,7 +9,6 @@ import Foundation
 
 final class CurrentDateChecker {
     
-    
     func setData() {
         let currentDateTime = Date()
         let formatter = DateFormatter()

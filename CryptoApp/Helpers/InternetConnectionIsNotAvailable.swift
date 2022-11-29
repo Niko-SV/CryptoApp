@@ -23,11 +23,4 @@ struct InternetConnectionIsNotAvailable: View {
         }
     }
     
-    
-}
-
-struct InternetConnectionIsNotAvailable_Previews: PreviewProvider {
-    static var previews: some View {
-        InternetConnectionIsNotAvailable()
-    }
 }

@@ -19,45 +19,22 @@ struct AuthView: View {
                 ContentView()
             } else {
                 VStack(alignment: .center, spacing: 0.0) {
-                    Text("Welcome to Cryptex")
-                        .font(.system(size: 30))
-                        .foregroundColor(.yellow)
-                        .padding()
-                    Image("logo")
-                        .resizable()
-                        .scaledToFit()
-                        .frame(width: 150, height: 150)
+                    welcomeText
+                    ImageLogo()
                     VStack {
                         TextField("Email Address", text: $viewModel.email)
-                            .disableAutocorrection(true)
-                            .autocapitalization(.none)
-                            .padding()
-                            .background(Color(.secondarySystemBackground))
-                            .cornerRadius(50)
-                        Text(viewModel.emailError)
-                            .fixedSize(horizontal: false, vertical: true)
-                            .font(.caption)
-                            .foregroundColor(.red)
+                            .modifier(TextFieldModifiers())
+                        AuthTextView(text: viewModel.emailError)
                         SecureField("Password", text: $viewModel.password)
-                            .padding()
-                            .background(Color(.secondarySystemBackground))
-                            .cornerRadius(50)
-                        Text(viewModel.passwordError)
-                            .fixedSize(horizontal: false, vertical: true)
-                            .font(.caption)
-                            .foregroundColor(.red)
-                        
+                            .modifier(TextFieldModifiers())
+                        AuthTextView(text: viewModel.passwordError)
                         Button(action: {
                             guard !viewModel.email.isEmpty, !viewModel.password.isEmpty else {
                                 return
                             }
                             authViewModel.signIn(email: viewModel.email, password: viewModel.password)
                         }, label: {
-                            Text("Sign In")
-                                .foregroundColor(Color.white)
-                                .frame(width: 200, height: 50)
-                                .background(Color.blue)
-                                .cornerRadius(50)
+                            SignInUpText(text: "Sign In")
                         })
                             .padding()
                         NavigationLink("Create Account", destination: SignUpView())
@@ -72,8 +49,15 @@ struct AuthView: View {
             authViewModel.signedIn = authViewModel.isSignedIn
         }
     }
+    
+    private var welcomeText: some View {
+        Text("Welcome to Cryptex")
+            .font(.system(size: 30))
+            .foregroundColor(.yellow)
+            .padding()
+    }
+    
 }
-
 
 struct AuthView_Previews: PreviewProvider {
     static var previews: some View {

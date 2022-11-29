@@ -20,7 +20,6 @@ class UserSettings: ObservableObject {
         }
     }
     
-    
     init() {
         self.username = UserDefaults.standard.object(forKey: "username") as? String ?? ""
         self.secondname = UserDefaults.standard.object(forKey: "secondname") as? String ?? ""

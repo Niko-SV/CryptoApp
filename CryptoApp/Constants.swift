@@ -11,5 +11,6 @@ class Constants {
     
     static let dateIndex = 23
     static let zeroMinutes = ":00"
+    static let passwordText = "Password"
     
 }

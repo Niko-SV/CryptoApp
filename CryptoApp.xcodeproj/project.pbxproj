@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		02163DF428E799B00058F8F5 /* InternetConnectionIsNotAvailable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02163DF328E799B00058F8F5 /* InternetConnectionIsNotAvailable.swift */; };
+		0260230929363D2D0008B6D0 /* SignInUpText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0260230829363D2D0008B6D0 /* SignInUpText.swift */; };
+		0260230B29363F550008B6D0 /* AuthTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0260230A29363F550008B6D0 /* AuthTextView.swift */; };
+		0260230D293641FD0008B6D0 /* TextFieldModifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0260230C293641FD0008B6D0 /* TextFieldModifiers.swift */; };
+		0260230F293642C90008B6D0 /* ImageLogo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0260230E293642C90008B6D0 /* ImageLogo.swift */; };
 		0293CE6B2906CF2F00974F9D /* CoinListItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0293CE6A2906CF2F00974F9D /* CoinListItemView.swift */; };
 		02B1680E28F999000034005E /* CurrentDateChecker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02B1680D28F999000034005E /* CurrentDateChecker.swift */; };
 		02B1681028F9A2310034005E /* SecureStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02B1680F28F9A2310034005E /* SecureStorage.swift */; };
@@ -40,10 +44,15 @@
 		02CE7EBC28E1F9FD001E9C72 /* CoinEntity+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02CE7EBA28E1F9FD001E9C72 /* CoinEntity+CoreDataClass.swift */; };
 		02CE7EBE28E20A75001E9C72 /* UpdatingService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02CE7EBD28E20A75001E9C72 /* UpdatingService.swift */; };
 		02D033DC290592BD009407A4 /* CoinListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02D033DB290592BD009407A4 /* CoinListViewModel.swift */; };
+		A8C5A5780F567C6B90DF1F7E /* Pods_CryptoApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 10A720787577727A84FFE043 /* Pods_CryptoApp.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		02163DF328E799B00058F8F5 /* InternetConnectionIsNotAvailable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InternetConnectionIsNotAvailable.swift; sourceTree = "<group>"; };
+		0260230829363D2D0008B6D0 /* SignInUpText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInUpText.swift; sourceTree = "<group>"; };
+		0260230A29363F550008B6D0 /* AuthTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthTextView.swift; sourceTree = "<group>"; };
+		0260230C293641FD0008B6D0 /* TextFieldModifiers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldModifiers.swift; sourceTree = "<group>"; };
+		0260230E293642C90008B6D0 /* ImageLogo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageLogo.swift; sourceTree = "<group>"; };
 		0293CE6A2906CF2F00974F9D /* CoinListItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinListItemView.swift; sourceTree = "<group>"; };
 		02B1680D28F999000034005E /* CurrentDateChecker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentDateChecker.swift; sourceTree = "<group>"; };
 		02B1680F28F9A2310034005E /* SecureStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecureStorage.swift; sourceTree = "<group>"; };
@@ -77,6 +86,9 @@
 		02CE7EBA28E1F9FD001E9C72 /* CoinEntity+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CoinEntity+CoreDataClass.swift"; sourceTree = "<group>"; };
 		02CE7EBD28E20A75001E9C72 /* UpdatingService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdatingService.swift; sourceTree = "<group>"; };
 		02D033DB290592BD009407A4 /* CoinListViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoinListViewModel.swift; sourceTree = "<group>"; };
+		10408A4DF45A73130717CB0A /* Pods-CryptoApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CryptoApp.release.xcconfig"; path = "Target Support Files/Pods-CryptoApp/Pods-CryptoApp.release.xcconfig"; sourceTree = "<group>"; };
+		10A720787577727A84FFE043 /* Pods_CryptoApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CryptoApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		39D679DB335BBDF6BB6211DE /* Pods-CryptoApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CryptoApp.debug.xcconfig"; path = "Target Support Files/Pods-CryptoApp/Pods-CryptoApp.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,18 +96,31 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A8C5A5780F567C6B90DF1F7E /* Pods_CryptoApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0260230729363CE10008B6D0 /* Reusable */ = {
+			isa = PBXGroup;
+			children = (
+				0260230829363D2D0008B6D0 /* SignInUpText.swift */,
+				0260230A29363F550008B6D0 /* AuthTextView.swift */,
+				0260230C293641FD0008B6D0 /* TextFieldModifiers.swift */,
+				0260230E293642C90008B6D0 /* ImageLogo.swift */,
+			);
+			path = Reusable;
+			sourceTree = "<group>";
+		};
 		02C764B228DB63C400514C44 = {
 			isa = PBXGroup;
 			children = (
 				02C764BD28DB63C400514C44 /* CryptoApp */,
 				02C764BC28DB63C400514C44 /* Products */,
 				E981B205FBE0151405172063 /* Pods */,
+				A154180B3ABA8A2B71D12E6D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -156,6 +181,7 @@
 		02C764DF28DB648900514C44 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				0260230729363CE10008B6D0 /* Reusable */,
 				02C764E128DB649700514C44 /* AuthView.swift */,
 				02C764E328DB649700514C44 /* ContentView.swift */,
 				02C764E428DB649700514C44 /* SignUpView.swift */,
@@ -235,9 +261,19 @@
 			path = Helpers;
 			sourceTree = "<group>";
 		};
+		A154180B3ABA8A2B71D12E6D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				10A720787577727A84FFE043 /* Pods_CryptoApp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		E981B205FBE0151405172063 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
+				39D679DB335BBDF6BB6211DE /* Pods-CryptoApp.debug.xcconfig */,
+				10408A4DF45A73130717CB0A /* Pods-CryptoApp.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -249,9 +285,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 02C764C928DB63C600514C44 /* Build configuration list for PBXNativeTarget "CryptoApp" */;
 			buildPhases = (
+				62366BC28A1BB089980974D0 /* [CP] Check Pods Manifest.lock */,
 				02C764B728DB63C400514C44 /* Sources */,
 				02C764B828DB63C400514C44 /* Frameworks */,
 				02C764B928DB63C400514C44 /* Resources */,
+				2D3562129C371D97B5367176 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -308,6 +346,48 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		2D3562129C371D97B5367176 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CryptoApp/Pods-CryptoApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CryptoApp/Pods-CryptoApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CryptoApp/Pods-CryptoApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		62366BC28A1BB089980974D0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CryptoApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		02C764B728DB63C400514C44 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -317,6 +397,7 @@
 				02CE7EB628E1F6B5001E9C72 /* CoreDataStack.swift in Sources */,
 				02C764DE28DB648000514C44 /* HourlyModel.swift in Sources */,
 				02C764EF28DB649700514C44 /* CoinDetailsView.swift in Sources */,
+				0260230F293642C90008B6D0 /* ImageLogo.swift in Sources */,
 				02C764E828DB649700514C44 /* ProfileView.swift in Sources */,
 				02C764FA28DB64AB00514C44 /* CoinDetailsViewModel.swift in Sources */,
 				02CE7EBB28E1F9FD001E9C72 /* CoinEntity+CoreDataProperties.swift in Sources */,
@@ -326,11 +407,13 @@
 				02B1680E28F999000034005E /* CurrentDateChecker.swift in Sources */,
 				02C764EA28DB649700514C44 /* CoinDetailsItemView.swift in Sources */,
 				0293CE6B2906CF2F00974F9D /* CoinListItemView.swift in Sources */,
+				0260230D293641FD0008B6D0 /* TextFieldModifiers.swift in Sources */,
 				02C764BF28DB63C400514C44 /* CryptoAppApp.swift in Sources */,
 				02C764DD28DB648000514C44 /* CoinModel.swift in Sources */,
 				02CE7EAF28E1E6A1001E9C72 /* CryptoDataContainer.xcdatamodeld in Sources */,
 				02C764D328DB645C00514C44 /* NetworkService.swift in Sources */,
 				02C764F928DB64AB00514C44 /* SignUpViewModel.swift in Sources */,
+				0260230929363D2D0008B6D0 /* SignInUpText.swift in Sources */,
 				02C77C8E28E2EA1300C3E831 /* ReachabilityManager.swift in Sources */,
 				02B1681028F9A2310034005E /* SecureStorage.swift in Sources */,
 				02163DF428E799B00058F8F5 /* InternetConnectionIsNotAvailable.swift in Sources */,
@@ -343,6 +426,7 @@
 				02C764EB28DB649700514C44 /* ContentView.swift in Sources */,
 				02C764E928DB649700514C44 /* AuthView.swift in Sources */,
 				02C764DC28DB648000514C44 /* CryptoDataModel.swift in Sources */,
+				0260230B29363F550008B6D0 /* AuthTextView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -465,6 +549,7 @@
 		};
 		02C764CA28DB63C600514C44 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 39D679DB335BBDF6BB6211DE /* Pods-CryptoApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -494,6 +579,7 @@
 		};
 		02C764CB28DB63C600514C44 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 10408A4DF45A73130717CB0A /* Pods-CryptoApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

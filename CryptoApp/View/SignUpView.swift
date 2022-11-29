@@ -15,44 +15,17 @@ struct SignUpView: View {
     
     var body: some View {
         VStack {
-            Text("Create your Cryptex account")
-                .font(.system(size: 30))
-                .foregroundColor(.yellow)
-            Image("logo")
-                .resizable()
-                .scaledToFit()
-                .frame(width: 150, height: 150)
+            topText
+            ImageLogo()
             
             VStack {
                 TextField("Email Address", text: $viewModel.email)
-                    .disableAutocorrection(true)
-                    .autocapitalization(.none)
-                    .padding()
-                    .background(Color(.secondarySystemBackground))
-                    .cornerRadius(50)
-                Text(viewModel.emailPrompt)
-                    .frame(maxWidth: .infinity, alignment: .leading)
-                    .fixedSize(horizontal: false, vertical: true)
-                    .font(.caption)
-                    .foregroundColor(.red)
-                SecureField("Password", text: $viewModel.password)
-                    .padding()
-                    .background(Color(.secondarySystemBackground))
-                    .cornerRadius(50)
-                Text(viewModel.passwordPrompt)
-                    .multilineTextAlignment(.leading)
-                    .fixedSize(horizontal: false, vertical: true)
-                    .font(.caption)
-                    .foregroundColor(.red)
-                SecureField("Password", text: $viewModel.confirmPassword)
-                    .padding()
-                    .background(Color(.secondarySystemBackground))
-                    .cornerRadius(50)
-                Text(viewModel.confirmPasswordPrompt)
-                    .fixedSize(horizontal: false, vertical: true)
-                    .font(.caption)
-                    .foregroundColor(.red)
-                
+                    .modifier(TextFieldModifiers())
+                AuthTextView(text: viewModel.emailPrompt)
+                secureTextField(text: Constants.passwordText, bindingText: $viewModel.password)
+                AuthTextView(text: viewModel.passwordPrompt)
+                secureTextField(text: Constants.passwordText, bindingText: $viewModel.confirmPassword)
+                AuthTextView(text: viewModel.confirmPasswordPrompt)
                 Button(action: {
                     
                     guard !viewModel.email.isEmpty, !viewModel.password.isEmpty, viewModel.password == viewModel.confirmPassword, viewModel.isEmailValid(), viewModel.isPasswordValid(), viewModel.passwordsMatch() else {
@@ -67,13 +40,7 @@ struct SignUpView: View {
                     authViewModel.signUp(email: viewModel.email, password: viewModel.password)
                     
                 }, label: {
-                    
-                    Text("Sign Up")
-                        .foregroundColor(Color.white)
-                        .frame(width: 200, height: 50)
-                        .background(Color.blue)
-                        .cornerRadius(50)
-                    
+                    SignInUpText(text: "Sign Up")
                 })
                     .padding()
             }
@@ -83,6 +50,19 @@ struct SignUpView: View {
         }
         .onAppear {
         }
+    }
+    
+    private var topText: some View {
+        Text("Create your Cryptex account")
+            .font(.system(size: 30))
+            .foregroundColor(.yellow)
+    }
+    
+    private func secureTextField(text: String, bindingText: Binding<String>) -> some View {
+        SecureField(text, text: bindingText)
+            .padding()
+            .background(Color(.secondarySystemBackground))
+            .cornerRadius(50)
     }
 }
 
