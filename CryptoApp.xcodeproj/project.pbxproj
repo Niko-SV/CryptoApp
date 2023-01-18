@@ -44,8 +44,35 @@
 		02CE7EBC28E1F9FD001E9C72 /* CoinEntity+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02CE7EBA28E1F9FD001E9C72 /* CoinEntity+CoreDataClass.swift */; };
 		02CE7EBE28E20A75001E9C72 /* UpdatingService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02CE7EBD28E20A75001E9C72 /* UpdatingService.swift */; };
 		02D033DC290592BD009407A4 /* CoinListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02D033DB290592BD009407A4 /* CoinListViewModel.swift */; };
+		276EF18B2976F17D00479492 /* NotificationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 276EF18A2976F17D00479492 /* NotificationService.swift */; };
+		276EF18F2976F17D00479492 /* NotificationServiceExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 276EF1882976F17D00479492 /* NotificationServiceExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		69409F50AD7C297B681DCA8F /* Pods_CryptoApp_NotificationServiceExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC8E02997EA0A9112EDCA23A /* Pods_CryptoApp_NotificationServiceExtension.framework */; };
 		A8C5A5780F567C6B90DF1F7E /* Pods_CryptoApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 10A720787577727A84FFE043 /* Pods_CryptoApp.framework */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		276EF18D2976F17D00479492 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 02C764B328DB63C400514C44 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 276EF1872976F17D00479492;
+			remoteInfo = NotificationServiceExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		276EF1902976F17D00479492 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				276EF18F2976F17D00479492 /* NotificationServiceExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		02163DF328E799B00058F8F5 /* InternetConnectionIsNotAvailable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InternetConnectionIsNotAvailable.swift; sourceTree = "<group>"; };
@@ -88,7 +115,15 @@
 		02D033DB290592BD009407A4 /* CoinListViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoinListViewModel.swift; sourceTree = "<group>"; };
 		10408A4DF45A73130717CB0A /* Pods-CryptoApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CryptoApp.release.xcconfig"; path = "Target Support Files/Pods-CryptoApp/Pods-CryptoApp.release.xcconfig"; sourceTree = "<group>"; };
 		10A720787577727A84FFE043 /* Pods_CryptoApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CryptoApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1DEFFBC0DCED8A5CB23FD633 /* Pods-CryptoApp-NotificationServiceExtension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CryptoApp-NotificationServiceExtension.debug.xcconfig"; path = "Target Support Files/Pods-CryptoApp-NotificationServiceExtension/Pods-CryptoApp-NotificationServiceExtension.debug.xcconfig"; sourceTree = "<group>"; };
+		276EF1882976F17D00479492 /* NotificationServiceExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = NotificationServiceExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		276EF18A2976F17D00479492 /* NotificationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationService.swift; sourceTree = "<group>"; };
+		276EF18C2976F17D00479492 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		276EF194297723AF00479492 /* NotificationServiceExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = NotificationServiceExtension.entitlements; sourceTree = "<group>"; };
+		276EF195297725E000479492 /* CryptoApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = CryptoApp.entitlements; sourceTree = "<group>"; };
 		39D679DB335BBDF6BB6211DE /* Pods-CryptoApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CryptoApp.debug.xcconfig"; path = "Target Support Files/Pods-CryptoApp/Pods-CryptoApp.debug.xcconfig"; sourceTree = "<group>"; };
+		9D51812EA2A0F016D3F5A0EB /* Pods-CryptoApp-NotificationServiceExtension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CryptoApp-NotificationServiceExtension.release.xcconfig"; path = "Target Support Files/Pods-CryptoApp-NotificationServiceExtension/Pods-CryptoApp-NotificationServiceExtension.release.xcconfig"; sourceTree = "<group>"; };
+		AC8E02997EA0A9112EDCA23A /* Pods_CryptoApp_NotificationServiceExtension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CryptoApp_NotificationServiceExtension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +132,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				A8C5A5780F567C6B90DF1F7E /* Pods_CryptoApp.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		276EF1852976F17D00479492 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				69409F50AD7C297B681DCA8F /* Pods_CryptoApp_NotificationServiceExtension.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -118,6 +161,7 @@
 			isa = PBXGroup;
 			children = (
 				02C764BD28DB63C400514C44 /* CryptoApp */,
+				276EF1892976F17D00479492 /* NotificationServiceExtension */,
 				02C764BC28DB63C400514C44 /* Products */,
 				E981B205FBE0151405172063 /* Pods */,
 				A154180B3ABA8A2B71D12E6D /* Frameworks */,
@@ -128,6 +172,7 @@
 			isa = PBXGroup;
 			children = (
 				02C764BB28DB63C400514C44 /* CryptoApp.app */,
+				276EF1882976F17D00479492 /* NotificationServiceExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -135,6 +180,7 @@
 		02C764BD28DB63C400514C44 /* CryptoApp */ = {
 			isa = PBXGroup;
 			children = (
+				276EF195297725E000479492 /* CryptoApp.entitlements */,
 				02C764BE28DB63C400514C44 /* CryptoAppApp.swift */,
 				02C764CF28DB641600514C44 /* Constants.swift */,
 				02CE7EB428E1F50D001E9C72 /* Helpers */,
@@ -261,10 +307,21 @@
 			path = Helpers;
 			sourceTree = "<group>";
 		};
+		276EF1892976F17D00479492 /* NotificationServiceExtension */ = {
+			isa = PBXGroup;
+			children = (
+				276EF194297723AF00479492 /* NotificationServiceExtension.entitlements */,
+				276EF18A2976F17D00479492 /* NotificationService.swift */,
+				276EF18C2976F17D00479492 /* Info.plist */,
+			);
+			path = NotificationServiceExtension;
+			sourceTree = "<group>";
+		};
 		A154180B3ABA8A2B71D12E6D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
 				10A720787577727A84FFE043 /* Pods_CryptoApp.framework */,
+				AC8E02997EA0A9112EDCA23A /* Pods_CryptoApp_NotificationServiceExtension.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -274,6 +331,8 @@
 			children = (
 				39D679DB335BBDF6BB6211DE /* Pods-CryptoApp.debug.xcconfig */,
 				10408A4DF45A73130717CB0A /* Pods-CryptoApp.release.xcconfig */,
+				1DEFFBC0DCED8A5CB23FD633 /* Pods-CryptoApp-NotificationServiceExtension.debug.xcconfig */,
+				9D51812EA2A0F016D3F5A0EB /* Pods-CryptoApp-NotificationServiceExtension.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -290,15 +349,35 @@
 				02C764B828DB63C400514C44 /* Frameworks */,
 				02C764B928DB63C400514C44 /* Resources */,
 				2D3562129C371D97B5367176 /* [CP] Embed Pods Frameworks */,
+				276EF1902976F17D00479492 /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				276EF18E2976F17D00479492 /* PBXTargetDependency */,
 			);
 			name = CryptoApp;
 			productName = CryptoApp;
 			productReference = 02C764BB28DB63C400514C44 /* CryptoApp.app */;
 			productType = "com.apple.product-type.application";
+		};
+		276EF1872976F17D00479492 /* NotificationServiceExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 276EF1932976F17D00479492 /* Build configuration list for PBXNativeTarget "NotificationServiceExtension" */;
+			buildPhases = (
+				840EE6CEB8C77A4E295DAC35 /* [CP] Check Pods Manifest.lock */,
+				276EF1842976F17D00479492 /* Sources */,
+				276EF1852976F17D00479492 /* Frameworks */,
+				276EF1862976F17D00479492 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NotificationServiceExtension;
+			productName = NotificationServiceExtension;
+			productReference = 276EF1882976F17D00479492 /* NotificationServiceExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -307,11 +386,14 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
-				LastSwiftUpdateCheck = 1400;
+				LastSwiftUpdateCheck = 1420;
 				LastUpgradeCheck = 1400;
 				TargetAttributes = {
 					02C764BA28DB63C400514C44 = {
 						CreatedOnToolsVersion = 14.0;
+					};
+					276EF1872976F17D00479492 = {
+						CreatedOnToolsVersion = 14.2;
 					};
 				};
 			};
@@ -329,6 +411,7 @@
 			projectRoot = "";
 			targets = (
 				02C764BA28DB63C400514C44 /* CryptoApp */,
+				276EF1872976F17D00479492 /* NotificationServiceExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -341,6 +424,13 @@
 				02C764C628DB63C600514C44 /* Preview Assets.xcassets in Resources */,
 				02C764C328DB63C600514C44 /* Assets.xcassets in Resources */,
 				02C764FC28DB731500514C44 /* GoogleService-Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		276EF1862976F17D00479492 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -380,6 +470,28 @@
 			);
 			outputPaths = (
 				"$(DERIVED_FILE_DIR)/Pods-CryptoApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		840EE6CEB8C77A4E295DAC35 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CryptoApp-NotificationServiceExtension-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -430,7 +542,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		276EF1842976F17D00479492 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				276EF18B2976F17D00479492 /* NotificationService.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		276EF18E2976F17D00479492 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 276EF1872976F17D00479492 /* NotificationServiceExtension */;
+			targetProxy = 276EF18D2976F17D00479492 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		02C764C728DB63C600514C44 /* Debug */ = {
@@ -551,8 +679,10 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 39D679DB335BBDF6BB6211DE /* Pods-CryptoApp.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = CryptoApp/CryptoApp.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"CryptoApp/Preview Content\"";
@@ -581,8 +711,10 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 10408A4DF45A73130717CB0A /* Pods-CryptoApp.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = CryptoApp/CryptoApp.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"CryptoApp/Preview Content\"";
@@ -607,6 +739,62 @@
 			};
 			name = Release;
 		};
+		276EF1912976F17D00479492 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1DEFFBC0DCED8A5CB23FD633 /* Pods-CryptoApp-NotificationServiceExtension.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = NotificationServiceExtension/NotificationServiceExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = Z6PLFXD39N;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = NotificationServiceExtension/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = NotificationServiceExtension;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.SerhiiNikolaiev.CryptoApp.NotificationServiceExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		276EF1922976F17D00479492 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9D51812EA2A0F016D3F5A0EB /* Pods-CryptoApp-NotificationServiceExtension.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = NotificationServiceExtension/NotificationServiceExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = Z6PLFXD39N;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = NotificationServiceExtension/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = NotificationServiceExtension;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.SerhiiNikolaiev.CryptoApp.NotificationServiceExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -624,6 +812,15 @@
 			buildConfigurations = (
 				02C764CA28DB63C600514C44 /* Debug */,
 				02C764CB28DB63C600514C44 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		276EF1932976F17D00479492 /* Build configuration list for PBXNativeTarget "NotificationServiceExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				276EF1912976F17D00479492 /* Debug */,
+				276EF1922976F17D00479492 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

@@ -61,7 +61,10 @@ final class CoinDetailsViewModel {
     
     static func format(nonFormattedPrice: String) -> String {
         let priceFormatter = NumberFormatter()
+        
+        priceFormatter.locale = Locale(identifier: "en_US")
         priceFormatter.numberStyle = .currency
+        priceFormatter.currencySymbol = "$ "
         
         guard let price = Double(nonFormattedPrice), let formattedPrice = priceFormatter.string(from: NSNumber(value: price)) else { return "" }
         
