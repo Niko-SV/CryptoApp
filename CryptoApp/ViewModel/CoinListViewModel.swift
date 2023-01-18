@@ -23,4 +23,8 @@ final class CoinsFetch: ObservableObject {
             self.coins = cryptoContainer.data.coins
         })
     }
+    
+    func addToFavorites(coin: CoinObject) {
+        
+    }
 }

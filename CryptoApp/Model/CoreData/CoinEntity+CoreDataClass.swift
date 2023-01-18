@@ -10,10 +10,10 @@ import Foundation
 import CoreData
 
 @objc(CoinObject)
-public class CoinObject: NSManagedObject {
+public class CoinObject: NSManagedObject{
     private let sparklineSeparator = "|"
 
-    convenience init?(context: NSManagedObjectContext, uuid: String, name: String, price: String, iconUrl: String, sparklineRaw: String) {
+    convenience init?(context: NSManagedObjectContext, uuid: String, name: String, price: String, iconUrl: String, sparklineRaw: String, isFavorite: Bool) {
         guard let brandsEntity = NSEntityDescription.entity(forEntityName: "CoinObject", in: context) else {
             return nil
         }
@@ -24,6 +24,7 @@ public class CoinObject: NSManagedObject {
         self.iconUrl = iconUrl
         self.uuid = uuid
         self.sparklineRaw = sparklineRaw
+        self.isFavorite = isFavorite
     }
     
     var sparkline: [String] {

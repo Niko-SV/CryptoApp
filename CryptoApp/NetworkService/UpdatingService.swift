@@ -30,7 +30,7 @@ class UpdatingService {
             } receiveValue: { cryptoContainer in
                 do {
                     cryptoContainer.data.coins.forEach {
-                        let object = CoinObject(context: self.context, uuid: $0.uuid, name: $0.name, price: $0.price, iconUrl: $0.iconUrl, sparklineRaw: "")
+                        let object = CoinObject(context: self.context, uuid: $0.uuid, name: $0.name, price: $0.price, iconUrl: $0.iconUrl, sparklineRaw: "", isFavorite: false)
                         object?.sparkline = $0.sparkline
                     }
                     try self.context.save()

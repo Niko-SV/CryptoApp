@@ -8,6 +8,7 @@
 import Foundation
 
 struct Coin: Decodable, Hashable {
+    
     var uuid: String
     var name: String
     var price: String

@@ -23,5 +23,6 @@ extension CoinObject {
     @NSManaged public var iconUrl: String?
     @NSManaged public var uuid: String?
     @NSManaged public var sparklineRaw: String?
+    @NSManaged public var isFavorite: Bool
 
 }
